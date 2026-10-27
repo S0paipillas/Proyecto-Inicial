@@ -1,13 +1,25 @@
 {% extends 'base.html' %}
- 
+
 {% block title %}
-Inicio | Proyecto Inicial
+Inicio
 {% endblock %}
- 
+
 {% block content %}
-<div class="container">
-<h1>Bienvenido a nuestro Proyecto Inicial</h1>
-<p>Esta es la pagina de inicio (faltan cositas)</p>
-<p>Hay que hacer el cuestionario (IMPORTANTE)</p>
+
+<div class="hero">
+
+    <h1 class="hero-title">
+        Te ayudamos a encontrar orientación para
+        resolver tus conflictos universitarios de forma rápida
+        y sencilla.
+    </h1>
+
+    <div class="hero-button">
+        <a href="{% url 'cuestionario' %}">
+            ¡Recibe tu orientación!
+        </a>
+    </div>
+
 </div>
+
 {% endblock %}
