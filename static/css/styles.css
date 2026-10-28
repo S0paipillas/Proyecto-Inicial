@@ -18,7 +18,8 @@ body {
     margin: auto;
 }
 
-/* lanavbar */
+
+/* Navbar */
 .navbar {
     background-color: #47008E;
     color: white;
@@ -71,7 +72,8 @@ body {
     color: #d3a1e6;
 }
 
-/* contenido */
+
+/* Contenido */
 .content {
     flex: 1;
     padding: 2rem;
@@ -119,9 +121,7 @@ body {
 }
 
 
-
-
-/* pie de pagina */
+/* Pie de pagina */
 .footer {
     background-color: #47008E;
     color: white;
@@ -130,7 +130,8 @@ body {
     padding: 1rem 0;
 }
 
-/* FFFFormulario */
+
+/* Formulario */
 
 form {
     max-width: 800px;

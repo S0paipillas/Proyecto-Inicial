@@ -7,7 +7,6 @@ class CuestionarioForm(forms.Form):
         help_text="Selecciona la institución a la que perteneces.",
         choices=[
             ("utfsm", "Universidad Tecnica Federico Santa Maria"),
-            ("pucv", "Pontificia Universidad Católica de Valparaíso"),
         ],
         widget=forms.RadioSelect
     )
@@ -20,6 +19,7 @@ class CuestionarioForm(forms.Form):
             ("administrativo", "Problemas Administrativos"),
             ("discriminacion", "Discriminación"),
             ("acoso", "Acoso Académico"),
+            ("economico", "Problemas Económicos"),
         ],
         widget=forms.RadioSelect
     )
@@ -28,7 +28,8 @@ class CuestionarioForm(forms.Form):
         label="¿Cuál es tu objetivo?",
         help_text="Indica qué tipo de ayuda o resultado esperas obtener respecto de la situación descrita.",
         choices=[
-            ("solucion", "Buscar una solución"),
+            ("solucion", "Buscar una solución al problema"),
+            ("orientacion", "Recibir orientación o recursos que me puedan ayudar"),
         ],
         widget=forms.RadioSelect
     )

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Equipo SOS{% endblock %}</title>
+    <title>{% block title %}Titulo{% endblock %}</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
@@ -13,10 +13,10 @@
     <header class="navbar">
         <div class="container">
             <div class="brand">
-                <a href="/" class="logo">Equipo SOS</a>
+                <a href="/" class="logo">Nombre del proyecto</a>
 
                 <span class="logo-subtitle">
-                    La plataforma de orientación para estudiantes.
+                    plataforma de orientación para estudiantes.
                 </span>
             </div>
 
@@ -24,7 +24,6 @@
                 <ul class="nav-links">
                     <a href="{% url 'home' %}">INICIO</a>
                     <a href="{% url 'cuestionario' %}">ORIENTACIÓN</a>
-                    <a href="/contacto">CONTACTO</a> <!-- CAMBIAR ESTO DESPUES CON LAS URLS DE CADA UNO -->
                 </ul>
             </nav>
         </div>

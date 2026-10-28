@@ -1,19 +1,14 @@
-# Projecto Inicial Paralelo 11 Grupo 12
-Integrantes: María Jesus Duarte, José Fuenzalida, Ignacia González, Benjamín Miño
-Se entrega el viernes
+# nombre del proyecto..
 
-## Lo que ya esta hecho
-  1. Repositorio creado
-  2. plantilla html y css creada
-  3. alguna estructuracion basica
+## Descripción del Proyecto
 
-## TO DO LIST
+_insertar nombre_ Es una herramienta de orientación centralizada que traduce el complejo laberinto normativo a un lenguaje accesible, entregando al estudiantado rutas de acción claras y estructuradas.
 
-  1. Inventar un nombre para el proyecto
-  3. INVESTIGAR SOBRE UNIVERSIDADES DE LA REGION PARA TENER LA PRUEBA DE CONCEPTO, SUPONGO QUE PODRA SER LA UTFSM Y OTRA MAS. IMPORTANTE
-  4. Identificación de los tipos de conflictos universitarios, derechos involucrados, reglamentos y recursos institucionales a considerar.
-  5. implementar la funcionalidad principal. hacer el formulario con la funcionalidad integrada de django
-  6. hacer el algoritmo de python y como funcionaria el procesamiento de datos..
-  7. transformar eso a entregar el diagnostico y la informacion
-  8. Pruebas de funcionamiento, corrección de errores y validación de los principales casos de uso definidos para el proyecto.
-  9. hacer que se vea bonito.
+Nuestro objetivo principal es orientar a estudiantes universitarios de la Región de Valparaíso ante posibles vulneraciones de derechos o conflictos normativos, mediante un sistema de selección guiada que permita clasificar la situación y entregar una ruta estandarizada de acción, con pasos claros, información sobre los derechos involucrados, normativa aplicable y recursos institucionales.
+
+## Prerequisitos
+- Django 6.1.2
+- Python 3.13.15
+
+## Información
+Proyecto Inicial S2 2026, Paralelo 11, Grupo 12
