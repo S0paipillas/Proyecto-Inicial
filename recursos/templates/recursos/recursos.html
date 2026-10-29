@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Recursos
+{% endblock %}
+
+{% block content %}
+
+<h1>Centro de Recursos</h1>
+
+<p>
+    Encuentra información sobre derechos estudiantiles,
+    convivencia universitaria y procedimientos institucionales.
+</p>
+
+<ul>
+    <li><a href="{% url 'derechos' %}">Derechos estudiantiles</a></li>
+</ul>
+
+{% endblock %}

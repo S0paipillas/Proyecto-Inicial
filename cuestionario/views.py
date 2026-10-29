@@ -8,21 +8,17 @@ def cuestionario(request):
 
         if form.is_valid():
 
-            universidad = form.cleaned_data["universidad"]
-            categoria = form.cleaned_data["categoria"]
-            objetivo = form.cleaned_data["objetivo"]
-
-            print(universidad) # para debuggear , quitar despues
-            print(categoria)
-            print(objetivo)
+            universidad_seleccionada = form.cleaned_data["universidad"]
+            categoria_seleccionada = form.cleaned_data["categoria"]
+            objetivo_seleccionado = form.cleaned_data["objetivo"]
 
             return render(
                 request,
                 "cuestionario/resultado.html",
                 {
-                    "universidad": universidad,
-                    "categoria": categoria,
-                    "objetivo": objetivo,
+                    "universidad": universidad_seleccionada,
+                    "categoria": categoria_seleccionada,
+                    "objetivo": objetivo_seleccionado,
                 }
             )
 
