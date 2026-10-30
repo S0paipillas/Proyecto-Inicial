@@ -16,7 +16,19 @@ class Conflicto(models.Model):
         return self.name
 
 
-class Objetivo(models.Model):
+class Subconflicto(models.Model):
+    conflicto = models.ForeignKey(
+        Conflicto,
+        on_delete=models.CASCADE
+    )
+
+    codigo = models.CharField(max_length=50, unique=True)
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+class Derechos(models.Model):
     codigo = models.CharField(max_length=50, unique=True)
     name = models.CharField(max_length=100)
 
@@ -34,8 +46,13 @@ class Orientacion(models.Model):
         on_delete=models.CASCADE
     )
 
-    objetivo = models.ForeignKey(
-        Objetivo,
+    subconflicto = models.ForeignKey(
+        Subconflicto,
+        on_delete=models.CASCADE
+    )
+
+    derechos = models.ForeignKey(
+        Derechos,
         on_delete=models.CASCADE
     )
 

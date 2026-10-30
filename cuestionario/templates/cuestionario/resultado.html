@@ -1,11 +1,41 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Resultado
+{% endblock %}
+
 {% block content %}
 
-<h1>Resultado</h1>
+<div class="container">
 
-<p>Universidad: {{ universidad }}</p>
-<p>Categoría: {{ categoria }}</p>
-<p>Objetivo: {{ objetivo }}</p>
+    {% if orientacion %}
+
+        <h1>{{ orientacion.titulo }}</h1>
+
+        <h2>Diagnóstico</h2>
+        <p>{{ orientacion.diagnostico }}</p>
+
+        <h2>Departamento recomendado</h2>
+        <p>{{ orientacion.departamento }}</p>
+
+        <h2>Recursos</h2>
+        <p>{{ orientacion.recursos }}</p>
+
+        <h2>Pasos a seguir</h2>
+        <p>{{ orientacion.pasos|linebreaks }}</p>
+
+    {% else %}
+
+        <h1>No se encontraron resultados</h1>
+
+        <p>
+            No existe una orientación registrada para esta combinación
+            de respuestas, todavia no hemos registrado la combinación
+            en nuestra base de datos
+        </p>
+
+    {% endif %}
+
+</div>
 
 {% endblock %}

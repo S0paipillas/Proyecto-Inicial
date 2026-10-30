@@ -1,22 +1,21 @@
 from django import forms
 
-class CuestionarioForm(forms.Form):
+class CuestionarioFormPag1(forms.Form):
 
     universidad = forms.ChoiceField(
         label="¿De que universidad eres?",
-        help_text="Selecciona la institución a la que perteneces.",
+        help_text="Selecciona la institución a la que perteneces. (Solo en la Región de Valparaíso)",
         choices=[
             ("utfsm", "Universidad Técnica Federico Santa María"),
-            ("pucv", "Pontificia Universidad Católica de Valparaíso (AUN NO IMPLEMENTADO)"),
         ],
         widget=forms.RadioSelect
     )
 
-    categoria = forms.ChoiceField(
+    conflicto = forms.ChoiceField(
         label="Elige la categoría de tu problema",
         help_text="Selecciona la opción que mejor describa la situación que estás experimentando.",
         choices=[
-            ("academico", "Problemas Académicos (notas, evaluaciones, asignaturas)"),
+            ("academico", "Problemas Académicos (asignaturas, inscripciones, evaluaciones, notas)"),
             ("administrativo", "Problemas Administrativos (matrícula, certificados, trámites)"),
             ("discriminacion", "Discriminación (trato desigual o exclusión)"),
             ("acoso", "Acoso Académico (hostigamiento por docentes o estudiantes)"),
@@ -25,14 +24,23 @@ class CuestionarioForm(forms.Form):
         widget=forms.RadioSelect
     )
 
-    objetivo = forms.ChoiceField(
-        label="¿Cuál es tu objetivo?",
-        help_text="Indica qué tipo de ayuda o resultado esperas obtener respecto de la situación descrita.",
+
+class CuestionarioFormPag2(forms.Form):
+
+    subconflicto = forms.ChoiceField(
+        label="Elige tu problema",
+        help_text="Selecciona la opción que mejor describa la situación que estás experimentando.",
+        choices=[],
+        widget=forms.RadioSelect
+    )
+
+    derechos = forms.ChoiceField(
+        label="¿Conoces tus derechos como estudiante?",
+        help_text="Indica si conoces los derechos educacionales de los estudiantes",
         choices=[
-            ("solucion", "Buscar una solución al problema"),
-            ("orientacion", "Recibir orientación o recursos que me puedan ayudar"),
-            ("contacto", "Saber a qué unidad o persona debo contactar"),
-            ("denuncia", "Conocer los canales para realizar una denuncia"),
+            ("si", "Sí, los conozco"),
+            ("no", "No, no se cuales son."),
         ],
         widget=forms.RadioSelect
     )
+    
